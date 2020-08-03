@@ -15,7 +15,7 @@ This implementation relies on the following feature set of C#:
 
 > dotnet run
 
-The configuration tag is important because in dotnetcore versions 2 and later, the default build is debug. In debug mode, all finalize commands may not be executed. This fact caused a whole week of frustration to identify after the update from version 1.1.
+The configuration tag is important because in dotnetcore versions 2 and later, the default build is debug. In debug mode, all finalize commands may not be executed. This fact took a whole week of frustration to identify after the update from version 1.1.
 
 ## Linux:
 
