@@ -1,10 +1,10 @@
 # FinalCache
-FinalCache uses LRU to evict entries. However it does not use access-history to compute LRU. Rather when objects become unused they become managed by LRU. Usage is determined by the garbage collector.
+FinalCache uses LRU to evict entries. However it does not use access-history to compute LRU. Rather when objects become unreachable (unused) they become managed by LRU.
 
 ## .NET Core (Cross-Platform)
 
 
-> dotnet build
+> dotnet build --configuration Release
 
 > dotnet run
 
