@@ -1,6 +1,6 @@
 # FinalCache
 
-FinalCache was designed to only evict entries that are unused by the client program without requiring explicit notification of cache entry usage. This repository includes all the source code and raw data used to test FinalCache. 
+The eviction of entries in software caches is meant to limit the cache's total memory footprint. We observe that if an evicted entry is in-use, or reachable, elsewhere in the program, then said eviction will have a negilible reduction in memory usage. Worse yet, a subsequent request for the evicted entry could result in the creation of a duplicate object, increasing memory usage and risking data inconsistency. FinalCache was designed to only evict entries that are unused by the client program without requiring explicit notification of cache entry usage. This repository includes the source code for a prototype FinalCache and the raw data and simulation used to test it. 
 
 What's included in this repo?
 * fire_logs contains the raw data used for publication
